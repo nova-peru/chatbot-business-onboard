@@ -12,9 +12,6 @@ type FetchChatConverstionParams = {
 export const fetchChatConversation = async (
   params: FetchChatConverstionParams
 ) => {
-  console.log(API_URL);
-
-  return;
   try {
     const { data } = await axios.get(API_URL!, {
       params,
