@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
   return {
     define: {
       "process.env.API_URL": JSON.stringify(env.API_URL),
+      "process.env.MIXPANEL_TOKEN": JSON.stringify(env.MIXPANEL_TOKEN),
     },
     plugins: [react()],
     base: "/chatbot-business-onboard/",
