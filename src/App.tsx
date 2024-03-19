@@ -4,6 +4,7 @@ import { Chat, Footer, Form, Header } from "./components";
 import { fetchChatConversation } from "./services";
 import { ChatConversation } from "./types";
 import { useAppStore } from "./store";
+import { Mixpanel } from "./config";
 
 function App() {
   const {
@@ -24,6 +25,13 @@ function App() {
     updateHasError(false);
 
     try {
+      Mixpanel?.track("Previsualize clicked", {
+        businessName,
+        businessSector,
+        hasEmojis,
+        hasQuickAnswers,
+      });
+
       const data = await fetchChatConversation({
         businessName,
         businessSector,
