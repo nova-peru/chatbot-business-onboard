@@ -28,7 +28,7 @@ export function Form({ onPreview }: FormProps) {
           </div>
           <input
             type="text"
-            placeholder="Ej. Pollería Rockys, Beuaty & Care"
+            placeholder="Ej. Pollería Rockys, Toyota"
             className="input input-bordered w-full max-w-xs"
             onChange={(e) => updateBusinessName(e.target.value)}
           />
