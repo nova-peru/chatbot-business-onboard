@@ -32,7 +32,7 @@ export const Chat = memo(
               <p className="font-semibold text-white">{businessName}</p>
             </div>
 
-            <div className="px-2 py-4 flex-1 overflow-y-scroll">
+            <div className="px-2 py-4 flex-1 overflow-y-auto">
               {hasError && !isLoading ? <ErrorMessage /> : null}
 
               {messages.length === 0 && !isLoading ? (

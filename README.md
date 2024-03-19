@@ -2,15 +2,15 @@
 
 Este proyecto functiona como un formulario de contacto para potenciales clientes de chatbots. Muestra un formulario y una previsualización entre un Chatbot y un cliente usando AI (ChatGPT).
 
-# Instalación
+## Instalación
 
 ```
 yarn
 ```
 
-# Correr en Desarrollo
+## Correr en Desarrollo
 
-Copiar variables de entorno
+Copiar variables de entorno.
 
 ```
 cp .env.example .env
@@ -22,4 +22,12 @@ Y finalmente correr el proyecto.
 
 ```
 yarn dev
+```
+
+## Desplegar
+
+Despliegue en Github pages.
+
+```
+yarn deploy
 ```
