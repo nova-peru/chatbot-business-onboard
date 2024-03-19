@@ -1,7 +1,6 @@
 {
   "name": "chatbot-business-onboard",
   "private": false,
-  "homepage": "https://novaworks.dev/chatbot-business-onboard",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
